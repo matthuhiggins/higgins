@@ -1,0 +1,86 @@
+html {
+    background-color: transparent;
+}
+
+body {
+    background-color: #dcdcdc;
+    font-family: 'Trebuchet MS', verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h3 {
+    font-family: Georgia, serif;
+    font-size: 200%;
+    color: #CC6600;
+}
+
+h4 {
+    font-size: 130%;
+    font-weight: bold;
+}
+
+p {
+    font-size: 12px;
+    text-align: left;
+}
+
+#frame {
+    background-color: white;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 15px;
+    width: 900px;
+}
+
+.header {
+    border-bottom: 1px solid #cccccc;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    font-size: 400%;
+    margin: 0 auto;
+    padding-top: 25px;
+    text-transform: uppercase;
+    width: 50%;
+}
+
+.header h2 {
+    font-size: 110%;
+    margin: 0 auto;
+    padding: 20px 0;
+    text-align: right;
+    width: 50%;
+}
+
+.content {
+    float: left;
+    margin: 0 2%;
+    width: 60%;
+}
+
+.projects {
+    float: right;
+    width: 30%;
+}
+
+.project {
+    padding-bottom: 40px;
+}
+
+.project > a {
+  text-decoration: none;
+}
+
+.project a h1#strictly-untyped {
+    color: #612E00;
+    font-family: Georgia,Times New Roman, sans-serif;
+    font-size: 25px;
+    padding: 0 10px 0 0;
+    width: 176x;
+}
+
+#frame .friendfeed.widget {
+    border-color: #ccc;
+}
