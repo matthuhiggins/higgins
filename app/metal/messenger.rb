@@ -2,15 +2,16 @@ class Messenger
   NOT_FOUND = [404, {"Content-Type" => "text/html"}, "Not Found"]
   class << self
     def call(env)
-      Rails.logger.info "path info = #{env["PATH_INFO"]}"
-      if env["PATH_INFO"] =~ /^\/message\/?(\d*)/
-        case env["REQUEST_METHOD"]
-          when "GET" then get_messages($1)
-          when "POST" then deliver_message(env['rack.input'].readlines.to_s)
-        end
-      else
-        NOT_FOUND
-      end
+      NOT_FOUND
+      # Rails.logger.info "path info = #{env["PATH_INFO"]}"
+      # if env["PATH_INFO"] =~ /^\/message\/?(\d*)/
+      #   case env["REQUEST_METHOD"]
+      #     when "GET" then get_messages($1)
+      #     when "POST" then deliver_message(env['rack.input'].readlines.to_s)
+      #   end
+      # else
+      #   NOT_FOUND
+      # end
     end
     
     private

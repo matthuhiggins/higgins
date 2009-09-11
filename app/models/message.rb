@@ -23,6 +23,8 @@ class Message
         end
 
         keys = (start_counter..current).map { |counter| "message_#{counter}" }
+        
+        Rails.logger.info "keys = #{keys.inspect}"
 
         {
           "messages" => cache.read_multi(keys).values_at(*keys).compact,
