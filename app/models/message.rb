@@ -25,7 +25,7 @@ class Message
         keys = (start_counter..current).map { |counter| "message_#{counter}" }
 
         {
-          "messages" => memcache.get_multi(keys).values_at(*keys).compact,
+          "messages" => cache.read_multi(keys).values_at(*keys).compact,
           "number" => current
         }
       end
@@ -41,10 +41,6 @@ class Message
       
       def cache
         Rails.cache
-      end
-      
-      def memcache
-        cache.instance_variable_get("@data")
       end
   end
 end
