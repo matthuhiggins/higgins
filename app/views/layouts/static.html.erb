@@ -5,10 +5,12 @@
 <head>
   <title><%= yield :title %></title>
   <link rel="icon" href="images/m.png">
-  <%= stylesheet_link_tag 'reset-fonts', 'elements' %>
+  <%= stylesheet_link_tag 'reset-fonts', 'elements', 'layout' %>
   <link type="application/atom+xml" href="http://friendfeed.com/matthuhiggins?format=atom" rel="alternate"/>
 </head>
 <body>
-  <%= yield %>
+  <div id="frame">
+    <%= yield %>    
+  </div>
 </body>
 </html>
