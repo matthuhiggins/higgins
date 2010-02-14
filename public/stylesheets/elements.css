@@ -23,6 +23,6 @@ ol li {
   list-style-type: lower-roman;
 }
 
-p {
-  padding: 10px 0;
+p + p {
+  padding-top: 20px;
 }
