@@ -8,6 +8,6 @@ class MessageController < ApplicationController
   end
   
   def create
-    render :text => Message.deliver(request.body.readlines.to_s)
+    render :text => Message.deliver(params[:message])
   end
 end
