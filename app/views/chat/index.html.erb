@@ -31,6 +31,7 @@
     $('#message-form').submit(function(event) {
       event.preventDefault();
       $.post('/message', {'message': $('#message').val()});
+      $('#message').val('');
     });
     $('#message').focus();
   
