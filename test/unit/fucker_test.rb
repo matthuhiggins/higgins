@@ -11,9 +11,4 @@ class FuckerTest < ActiveSupport::TestCase
     assert_nil Facebook.parse_cookie({"fbs_#{app_id}" => bad_cookie}, app_id, application_secret)
     assert_nil Facebook.parse_cookie({'fbs_poop' => valid_cookie}, app_id, application_secret)
   end
-  
-  private
-    def facebook_cookie()
-      
-    end
 end

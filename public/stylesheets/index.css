@@ -63,6 +63,13 @@ p {
   text-decoration: none;
 }
 
+.project a h1#swpd {
+  background-color: #3B5998;
+  color: white;
+  font-family: "lucida grande", tahoma, sans-serif;
+  padding: 3px 0 3px 6px;
+}
+
 .project a h1#strictly-untyped {
     color: #612E00;
     font-family: Georgia,Times New Roman, sans-serif;
