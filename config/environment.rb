@@ -1,7 +1,5 @@
-RAILS_GEM_VERSION = '2.3.8' unless defined? RAILS_GEM_VERSION
-require File.join(File.dirname(__FILE__), 'boot')
+# Load the rails application
+require File.expand_path('../application', __FILE__)
 
-Rails::Initializer.run do |config|
-  config.frameworks = [:action_view, :action_controller]
-  config.time_zone = 'UTC'
-end
+# Initialize the rails application
+Higgins::Application.initialize!
