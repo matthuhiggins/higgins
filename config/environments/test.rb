@@ -6,7 +6,6 @@ Higgins::Application.configure do
   # Show full error reports and disable caching
   config.consider_all_requests_local = true
   config.action_controller.perform_caching             = false
-  config.action_view.cache_template_loading            = true
 
   # Disable request forgery protection in test environment
   config.action_controller.allow_forgery_protection    = false
