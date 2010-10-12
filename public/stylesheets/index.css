@@ -44,14 +44,8 @@ p {
     width: 50%;
 }
 
-.content {
-    float: left;
-    margin: 0 2%;
-    width: 60%;
-}
-
 .projects {
-    float: right;
+    float: left;
     width: 30%;
 }
 
@@ -76,8 +70,4 @@ p {
     font-size: 25px;
     padding: 0 10px 0 0;
     width: 176x;
-}
-
-#frame .friendfeed.widget {
-    border-color: #ccc;
 }
