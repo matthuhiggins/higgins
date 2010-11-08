@@ -6,10 +6,24 @@
   <%= stylesheet_link_tag 'reset-fonts', 'elements', 'layout' %>
 </head>
 <body>
+  <div id="header-wrap">
+    <div id="header">
+      <%= link_to 'Matthew Higgins', root_path, class: 'title' %>
+      <div class="login">
+        <% if fb.connected? %>
+          <%= fbml 'name' %>
+        <% else %>
+          <%= fbml 'login-button', 'Say Hello' %>
+        <% end %>
+      </div>
+    </div>
+  </div>
+
   <div id="frame">
     <%= yield %>    
   </div>
   
   <%= render 'shared/analytics' %>
+  <%= render 'shared/facebook' %>
 </body>
 </html>

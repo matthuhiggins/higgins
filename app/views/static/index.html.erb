@@ -2,15 +2,12 @@
 
 <%= stylesheet_link_tag 'index' %>
 
-<div class="header">
-  <h1>Matthew Higgins</h1>
-  <h2>The Homepage</h2>
-</div>
-
 <div class="projects">
   <h3>Work</h3>
   <div class="project">
-    <a href="http://www.napera.com"><img src="images/napera.gif" alt="Napera Networks" id="stupid-margin"/></a>
+    <%= link_to 'http://www.gotime.com' do %>
+      <%= image_tag 'logos/gotime.png' %>
+    <% end %>
     <p>
       The company I work for.
     </p>
@@ -24,7 +21,9 @@
     </p>
   </div>
   <div class="project">
-    <a href="http://www.haikuvillage.com"><img src="images/haikuvillage.png" alt="Haiku Village"/></a>
+    <%= link_to 'http://www.haikuvillage.com' do %>
+      <%= image_tag 'logos/haikuvillage.png' %>
+    <% end %>
     <p>
       A place to create and share haiku.
     </p>

@@ -1,15 +1,45 @@
 html {
-  background-color: #dcdcdc;
   height: 100%;
+  overflow-y: scroll;
 }
 
 body {
-  background-color: #dcdcdc;
+  height: 100%;
+}
+
+#header-wrap {
+  background-color: #da1102;
+}
+
+#header {
+  margin: 0 auto;
+  width: 900px;
+  overflow: hidden;
+  padding: 0 20px;
+}
+
+#header .title {
+  color: white;
+  float: left;
+  text-decoration: none;
+  text-shadow: 0 1px 0 #870802;
+  text-transform: uppercase;
+  font-size: 30px;
+}
+
+#header .login {
+  float: right;
+  margin-top: 5px;
 }
 
 #frame {
     background-color: white;
-    margin: 0 auto;
+    border-bottom: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    margin: 0 auto;    
     overflow: hidden;
     padding: 15px;
     width: 900px;
