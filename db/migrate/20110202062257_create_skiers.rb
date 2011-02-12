@@ -5,6 +5,7 @@ class CreateSkiers < ActiveRecord::Migration
       t.integer   :number,  null: false
       t.timestamps
     end
+    add_index :skiers, :number, unique: :true
   end
 
   def self.down
