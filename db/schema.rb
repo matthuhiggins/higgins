@@ -16,11 +16,13 @@ ActiveRecord::Schema.define(:version => 20110202062925) do
     t.integer  "race_id",            :null => false
     t.integer  "skier_id",           :null => false
     t.integer  "team_id",            :null => false
-    t.integer  "oppenent_id",        :null => false
-    t.float    "blue_time",          :null => false
+    t.integer  "place",              :null => false
     t.float    "red_time",           :null => false
-    t.float    "oppenent_blue_time"
-    t.float    "oppenent_red_time"
+    t.float    "blue_time",          :null => false
+    t.integer  "opponent_number",    :null => false
+    t.integer  "opponent_id"
+    t.float    "opponent_red_time"
+    t.float    "opponent_blue_time"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -41,6 +43,8 @@ ActiveRecord::Schema.define(:version => 20110202062925) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  add_index "skiers", ["number"], :name => "index_skiers_on_number", :unique => true
 
   create_table "teams", :force => true do |t|
     t.string   "name",       :null => false
