@@ -44,7 +44,7 @@ class Race < ActiveRecord::Base
           skier = Skier.find_or_create_by_number match[:number], name: match[:name]
           race.matchups.create(
             skier: skier,
-            team: Team.first,
+            team: Team.find_by_prefix(match[:team]),
             place: match[:place],
             red_time: normalize_time(match[:red_time]),
             blue_time: normalize_time(match[:blue_time]),
