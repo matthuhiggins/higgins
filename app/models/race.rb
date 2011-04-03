@@ -42,6 +42,7 @@ class Race < ActiveRecord::Base
       while line = io.gets do
         if match = line.chomp.match(MATCHUP_REGEX)
           skier = Skier.find_or_create_by_number match[:number], name: match[:name]
+          p "match = #{match.inspect}"
           race.matchups.create(
             skier: skier,
             team: Team.find_by_prefix(match[:team]),
@@ -55,9 +56,8 @@ class Race < ActiveRecord::Base
     end
 
     def normalize_time(time)
-      if time.to_f == 0.0
-        9999.000
-      end
+      time = time.to_f
+      time == 0.0 ? 9999.000 : time
     end
   end
 

@@ -4,7 +4,7 @@ namespace :race do
     Skier.delete_all
     Matchup.delete_all
 
-    2.upto(5) do |week|
+    2.upto(7) do |week|
       filename = "races/alp_thursday_week_#{week}.txt"
       Race.import week, open(filename)
     end
