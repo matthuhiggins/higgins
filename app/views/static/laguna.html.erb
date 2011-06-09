@@ -1,0 +1,86 @@
+<html>
+<head>
+  <style>
+/*    body {
+      font-family: Arial;
+      margin: 0 auto;
+    }
+*/    h1 {
+      color: #333;
+      font-size: 42px;
+      font-weight: bold;
+    }
+    
+    h2 {
+      font-size: 32px;
+      border-bottom: 2px solid #ccc;
+      margin: 0;
+      padding-bottom: 6px;
+    }
+    
+    .sarah {
+      color: pink;
+      font-weight: bold;
+    }
+
+    .matt {
+      color: green;
+      font-weight: bold;
+    }
+
+    p {
+      font-size: 14px;
+      padding-bottom: 6px;
+    }
+    
+    .entry {
+      overflow: hidden;
+      margin-top: 25px;
+    }
+    
+    .entry img,
+    .entry .copy {
+      float: left;
+      margin: 0 10px;
+      width: 45%;
+    }
+  </style>
+</head>
+<body>
+  <h1>
+    <span class="sarah">Sarah</span> and 
+    <span class="matt">Matt</span> => Laguna Beach
+  </h1>
+  
+  <h2>Day #1</h2>
+  
+  <div class="entry">
+    <div class="copy">
+      <p>
+        Here is a picture of <span class="matt">Matt</span>.
+        Matt wants to play in the waves and doesn't want to do a 9.6 mile hike tomorrow!
+      </p>
+      <p>
+        Waiting for a beer at bars pisses Matt off.
+        The only thing that pisses him off more are annoying kids on the plane.
+      </p>
+    </div>
+    <%= image_tag 'laguna/matt.jpg' %>
+  </div>
+  <div class="entry">
+    <%= image_tag 'laguna/sarah.jpg' %>
+    <div class="copy">
+      <p>
+        Here is a picture of <span class="sarah">Sarah</span>.
+        She isn't having a very good time.
+        Maybe she is afraid of planes or wants to be reading Cosmo instead
+        of hanging out with Matt.
+      </p>
+      <p>
+        Sarah found a replacement for Matt; she bought a recent issue of Us Weekly.
+        She plans on telling Matt everything that happened to Leonardo DiCaprio after done reading.
+      </p>
+    </div>
+  </div>
+</body>
+</html>
