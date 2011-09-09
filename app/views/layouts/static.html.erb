@@ -2,8 +2,8 @@
 <html>
 <head>
   <title><%= yield :title %></title>
-  <link rel="icon" href="images/m.png">
-  <%= stylesheet_link_tag 'reset-fonts', 'elements', 'layout' %>
+  <%= tag :link, rel: 'icon', href: image_path('m.png'), type: 'image/png' %>
+  <%= stylesheet_link_tag 'application' %>
 </head>
 <body>
   <div id="header-wrap">
@@ -23,7 +23,7 @@
     <%= yield %>    
   </div>
   
-  <%= render 'shared/analytics' %>
-  <%= render 'shared/facebook' %>
+  <%= render 'analytics' %>
+  <%= render 'facebook' %>
 </body>
 </html>

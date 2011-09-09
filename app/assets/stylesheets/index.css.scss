@@ -1,0 +1,51 @@
+/*html {
+  background-color: transparent;
+}*/
+
+body {
+  font-family: 'Trebuchet MS', verdana, sans-serif;
+}
+
+h3 {
+  font-family: Georgia, serif;
+  font-size: 200%;
+  color: #CC6600;
+}
+
+h4 {
+  font-size: 130%;
+  font-weight: bold;
+}
+
+p {
+  font-size: 12px;
+  text-align: left;
+}
+
+.projects {
+  float: left;
+  width: 30%;
+}
+
+.project {
+  padding-bottom: 40px;
+  
+  & > a {
+    text-decoration: none;
+  }
+
+  a h1#swpd {
+    background-color: #3B5998;
+    color: white;
+    font-family: "lucida grande", tahoma, sans-serif;
+    padding: 3px 0 3px 6px;
+  }
+
+  a h1#strictly-untyped {
+    color: #612E00;
+    font-family: Georgia,Times New Roman, sans-serif;
+    font-size: 25px;
+    padding: 0 10px 0 0;
+    width: 176x;
+  }
+}
