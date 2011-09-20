@@ -5,6 +5,7 @@
     <li>
       <div class="title">
         <%= link_to list.title, list %>
+        (<%= link_to 'edit', edit_list_path(list) %>)
       </div>
       <div class="description">
         <%= list.description %>

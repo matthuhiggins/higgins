@@ -3,9 +3,11 @@
 <head>
   <title><%= yield :title %></title>
   <%= tag :link, rel: 'icon', href: image_path('m.png'), type: 'image/png' %>
+  <%= javascript_include_tag 'application' %>
   <%= stylesheet_link_tag 'application' %>
+  <%= csrf_meta_tag %>
 </head>
-<body>
+<%= body do %>
   <div id="header-wrap">
     <div id="header">
       <%= link_to 'matthewhiggins.com', root_path, class: 'title' %>
@@ -25,5 +27,5 @@
   
   <%= render 'analytics' %>
   <%= render 'facebook' %>
-</body>
+<% end %>
 </html>

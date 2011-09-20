@@ -36,3 +36,13 @@ ol li {
 p + p {
   padding-top: 20px;
 }
+
+form {
+  input[type="text"] {
+    padding: 3px;
+  }
+  
+  textarea {
+    padding: 3px;
+  }
+}
