@@ -1,5 +1,5 @@
 class CreateMatchups < ActiveRecord::Migration
-  def self.up
+  def change
     create_table :matchups do |t|
       t.integer     :race_id,         null: false
       t.integer     :skier_id,        null: false
@@ -13,9 +13,5 @@ class CreateMatchups < ActiveRecord::Migration
       t.float       :opponent_blue_time
       t.timestamps
     end
-  end
-
-  def self.down
-    drop_table :matchups
   end
 end

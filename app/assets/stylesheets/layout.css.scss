@@ -16,19 +16,18 @@ body {
   width: 900px;
   overflow: hidden;
   padding: 0 20px;
-}
+  
+  .title {
+    color: #f0f0f0;
+    float: left;
+    text-decoration: none;
+    font-size: 20px;
+  }
 
-#header .title {
-  color: #f0f0f0;
-  float: left;
-  text-decoration: none;
-  text-shadow: 0 1px 0 #870802;
-  font-size: 20px;
-}
-
-#header .login {
-  float: right;
-  margin-top: 5px;
+  .login {
+    float: right;
+    margin-top: 5px;
+  }
 }
 
 #frame {
@@ -41,7 +40,7 @@ body {
     -moz-border-radius-bottomleft: 5px;
     -moz-border-radius-bottomright: 5px;
 /*    -moz-border-radius: 5px;*/
-    margin: 0 auto;    
+    margin: 0 auto;
     overflow: hidden;
     padding: 15px;
     width: 900px;

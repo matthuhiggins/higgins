@@ -1,0 +1,15 @@
+<%= title @list.title %>
+
+<h1><%= @list.title %></h1>
+
+<div class="description">
+  <%= @list.description %>
+</div>
+
+<div id="post_list">
+  <% @list.posts.each do |post| %>
+    <%= render post %>
+  <% end %>
+</div>
+
+<%= render 'post_form', list: @list %>

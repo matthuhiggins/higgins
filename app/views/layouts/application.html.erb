@@ -2,10 +2,12 @@
 <html>
 <head>
   <title><%= yield :title %></title>
-  <link rel="icon" href="images/m.png">
-  <%= stylesheet_link_tag 'reset-fonts', 'elements', 'layout' %>
+  <%= tag :link, rel: 'icon', href: image_path('m.png'), type: 'image/png' %>
+  <%= javascript_include_tag 'application' %>
+  <%= stylesheet_link_tag 'application' %>
+  <%= csrf_meta_tag %>
 </head>
-<body>
+<%= body do %>
   <div id="header-wrap">
     <div id="header">
       <%= link_to 'matthewhiggins.com', root_path, class: 'title' %>
@@ -23,7 +25,7 @@
     <%= yield %>    
   </div>
   
-  <%= render 'shared/analytics' %>
-  <%= render 'shared/facebook' %>
-</body>
+  <%= render 'analytics' %>
+  <%= render 'facebook' %>
+<% end %>
 </html>

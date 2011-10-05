@@ -1,4 +1,8 @@
 Higgins::Application.routes.draw do
-  match ':action' => 'static'
-  root :to => 'static#index'
+  resources :lists do
+    resources :posts
+  end
+
+  match 'static/:action' => 'static'
+  root to: 'static#index'
 end

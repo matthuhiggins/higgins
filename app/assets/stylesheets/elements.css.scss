@@ -2,6 +2,10 @@
   outline: none;
 }
 
+body {
+  font-family: 'Trebuchet MS', verdana, sans-serif;
+}
+
 h1 {
   font-size: 22px;
   font-weight: bold;
@@ -31,4 +35,14 @@ ol li {
 
 p + p {
   padding-top: 20px;
+}
+
+form {
+  input[type="text"] {
+    padding: 3px;
+  }
+  
+  textarea {
+    padding: 3px;
+  }
 }

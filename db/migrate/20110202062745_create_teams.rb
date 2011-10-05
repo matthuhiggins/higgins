@@ -1,13 +1,9 @@
 class CreateTeams < ActiveRecord::Migration
-  def self.up
+  def change
     create_table :teams do |t|
       t.string  :name, null: false
       t.timestamps
     end
     add_index :teams, :name, unique: true
-  end
-
-  def self.down
-    drop_table :teams
   end
 end
