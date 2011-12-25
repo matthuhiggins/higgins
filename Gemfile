@@ -1,13 +1,13 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.1.0'
+gem 'rails', git: 'https://github.com/rails/rails.git', branch: '3-2-stable'
 gem 'fb_rails'
 gem 'jquery-rails'
-gem 'redcarpet'
+gem 'redcarpet', require: false
 
 group :assets do
-  gem 'sass-rails', '~> 3.1.0'
-  gem 'coffee-rails', '~> 3.1.0'
+  gem 'sass-rails', '~> 3.2.0'
+  gem 'coffee-rails', '~> 3.2.0'
   gem 'uglifier'
 end
 
