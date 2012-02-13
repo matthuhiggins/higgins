@@ -11,13 +11,6 @@
   <div id="header-wrap">
     <div id="header">
       <%= link_to 'matthewhiggins.com', root_path, class: 'title' %>
-      <div class="login">
-        <% if fb.connected? %>
-          <%= fbml 'name' %>
-        <% else %>
-          <%# fbml 'login-button', 'Say Hello' %>
-        <% end %>
-      </div>
     </div>
   </div>
 
@@ -26,6 +19,5 @@
   </div>
   
   <%= render 'analytics' %>
-  <%= render 'facebook' %>
 <% end %>
 </html>
