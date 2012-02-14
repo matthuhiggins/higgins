@@ -4,8 +4,12 @@ module ApplicationHelper
   end
 
   def body &block
-    html_options = {id: "#{controller_name}_#{action_name}"}
+    html_options = {id: controller_id, class: action_name}
     content_tag(:body, html_options, &block)
+  end
+
+  def controller_id
+    controller.class.name.gsub(/Controller/, '').split('::').map(&:underscore) * '_'
   end
 
   def focus dom_id

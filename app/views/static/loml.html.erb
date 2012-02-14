@@ -1,50 +1,81 @@
 <%= stylesheet_link_tag 'impress' %>
+<% title 'LOML' %>
+
 <div id="impress" class="impress-not-supported">
   <div class="fallback-message">
-    <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
-    <p>For the best experience please use the latest <b>Chrome</b> or <b>Safari</b> browser. Firefox 10 (to be released soon) will also handle it.</p>
+    <p>You browser <strong>sucks</strong>. Try using Chrome.</p>
   </div>
 
-  <div id="bored" class="step slide" data-x="-1000" data-y="-1500">
-    <q>This is the <b>best</b> valentine's day gift</q>
+  <div class="step slide" id="cover" data-x="-2000" data-y="-1500">
+    <q>To: <strong>Brigitte</strong></q>
+    <q>From: <strong>Matt</strong></q>
+    <q class="hint">A short <strong>love</strong> story. Use your arrow keys to begin!</q>
   </div>
 
-  <div class="step slide" data-x="0" data-y="-1500">
-    <q>I didn't feel like spending <strong>any money</strong> on <strong>stupid holidays</strong> such as Valentine's</q>
+  <div class="step slide" id="definition" data-x="-1000" data-y="-1500">
+    <strong>LOML</strong> (lä'mōl)
+    <p><em>n.</em></p>
+    <blockquote>
+      1. Acronym for love of my life. A soulmate. Often abbreviated as loms.
+    </blockquote>
+    <div class="examples">
+      <div>Examples of lomls:</div>
+      <%= image_tag 'loml/cute.jpg', style: 'margin-right: 48px;' %>
+      <%= image_tag 'loml/hey.jpg' %>
+    </div>
   </div>
 
-  <div class="step slide" data-x="1000" data-y="-1500">
-    <q>So instead I spent <strong>hours</strong> trying to impress you with my <strong>web development</strong> skillz</q>
+  <div class="step slide narrative" id="met" data-x="0" data-y="-1500">
+    <q>
+      The lomls met on <strong>June 4th, 2011</strong>.
+    </q>
+    <q>
+      Brigitte Woods, a bright young girl with the face of an angel, walked up to Matt Higgins, a drunk old man, and they had a great chat<sup>*</sup>
+    </q>
+    <div class="footnote"><sup>*</sup> They did more than chat - they had a kiss!</div>
   </div>
 
-  <div id="title" class="step" data-x="0" data-y="0" data-scale="4">
-    <span class="try">I hope you're</span>
-    <h1>satisfied<sup>*</sup></h1>
-    <span class="footnote"><sup>*</sup> with my skillz</span>
+  <div class="step slide narrative" data-x="1000" data-y="-1500">
+    <q>
+      Brigitte really loved receiving <strong>holds</strong>, and Matt loved giving <strong>holds</strong>.
+      It was just great.
+    </q>
+    <q>
+      On the next page, we'll find out what happened after just one moon!
+    </q>
   </div>
 
-  <div id="its" class="step" data-x="850" data-y="3000" data-rotate="90" data-scale="5">
+  <div id="lomls" class="step" data-x="0" data-y="0" data-scale="4">
+    <span class="try">They became</span>
+    <h1>LOMLs!</h1>
+  </div>
+
+  <div id="times" class="step narrative" data-x="850" data-y="3000" data-rotate="90" data-scale="5">
     <p>
-      Even though I made <strong>no restaurant reservations</strong>, <br>
-      and didn't even Google for <a href="https://www.google.com?q=valentines%20day%20ideas">valentine's day ideas</a> <br>
-      I figured drinking a bottle of wine and making this would <strong>satisfy</strong> your needs.
+      Nobody could fit all their great times on one web page.
     </p>
+    <div>
+      <%= image_tag 'loml/shots.jpg' %>
+      <%= image_tag 'loml/gamer.jpg' %>
+      <%= image_tag 'loml/drinker.jpg' %>
+      <%= image_tag 'loml/hikers.jpg' %>
+    </div>
   </div>
 
   <div id="big" class="step" data-x="3500" data-y="2100" data-rotate="180" data-scale="6">
-    <p>So <b>BAM</b> <span class="thoughts">Here I am</span></p>
+    <p>So <strong>BAM</strong> <span class="thoughts">Here I am</span></p>
   </div>
 
   <div id="tiny" class="step" data-x="2825" data-y="2325" data-z="-3000" data-rotate="300" data-scale="1">
-    <p>and <b>there I</b> woo you</p>
+    <p>and <strong>there I</strong> woo you</p>
   </div>
 
   <div id="ing" class="step" data-x="3500" data-y="-850" data-rotate="270" data-scale="6">
-    <p>by <b class="positioning">holding</b>, <b class="rotating">kissing</b> and <b class="scaling">freaking</b> you out</p>
+    <p>by <b class="positioning">holding</strong>, <b class="rotating">kissing</strong> and <b class="scaling">freaking</strong> you out</p>
   </div>
 
   <div id="imagination" class="step" data-x="6700" data-y="-300" data-scale="6">
-    <p>so now <b>you</b> must show me your <b class="imagination">gift</b></p>
+    <p>so now <strong>you</strong> must show me your <b class="imagination">gift</strong></p>
   </div>
 
   <div id="source" class="step" data-x="6300" data-y="2000" data-rotate="20" data-scale="4">
@@ -57,29 +88,11 @@
   </div>
 
   <div id="its-in-3d" class="step" data-x="6200" data-y="4300" data-z="-100" data-rotate-x="-40" data-rotate-y="10" data-scale="2">
-    <p><span class="have">have</span> <span class="you">you</span> <span class="noticed">noticed</span> <span class="its">it's</span> <span class="in">in</span> <b>3D<sup>*</sup></b>?</p>
+    <p><span class="have">have</span> <span class="you">you</span> <span class="noticed">noticed</span> <span class="its">it's</span> <span class="in">in</span> <strong>3D<sup>*</sup></strong>?</p>
     <span class="footnote">Yeah buddy!</span>
   </div>
 
   <div id="overview" class="step" data-x="3000" data-y="1500" data-scale="10">
   </div>
 
-</div>
-
-<!--
-  
-    Hint is not related to impress.js in any way.
-  
-    But it can show you how to use impress.js features in creative way.
-  
-    When the presentation step is shown (selected) it's element get's the class of "active" and `#impress` root
-    element get's the class based on active step id `step-ID` (where ID is the step id)... It probably is not
-    so clear because of all these IDs in here, so for example when the first step (the one with id of `bored`)
-    is active, `#impress` element get a class of `step-bored`.
-  
-    This class is used by this hint below. Check CSS file to see how it's shown with delayed CSS animation.
-  
--->
-<div class="hint">
-    <p>Use a spacebar or arrow keys to navigate</p>
 </div>
