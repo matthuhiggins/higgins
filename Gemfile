@@ -11,10 +11,9 @@ group :assets do
 end
 
 group :development, :test do
-  gem 'mysql2'
 end
 
 group :production do
   gem 'thin'
-  gem 'pg'
+  # gem 'pg'
 end

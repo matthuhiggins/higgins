@@ -1,12 +1,14 @@
 require File.expand_path('../boot', __FILE__)
 
-require 'rails/all'
+require 'action_controller/railtie'
+require 'action_mailer/railtie'
+require 'rails/test_unit/railtie'
+require 'sprockets/railtie'
 
 Bundler.require(*Rails.groups(assets: %w(development test)))
 
 module Higgins
   class Application < Rails::Application
-    config.active_record.identity_map = true
     config.assets.enabled = true
     config.active_support.deprecation = :stderr
     config.secret_token = 'c08895573baf2c545629d3394bd1ed97'
