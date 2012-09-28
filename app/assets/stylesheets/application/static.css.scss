@@ -7,9 +7,10 @@
   }
 
   h3 {
-    font-family: Georgia, serif;
+//    font-family: Georgia, serif;
     font-size: 200%;
-    color: #CC6600;
+    font-weight: bold;
+//    color: #CC6600;
   }
 
   h4 {
@@ -28,7 +29,7 @@
   }
 
   .project {
-    padding-bottom: 40px;
+    padding: 20px 0;
   
     & > a {
       text-decoration: none;
