@@ -3,7 +3,8 @@
 <head>
   <title><%= yield :title %></title>
   <%= tag :link, rel: 'icon', href: image_path('m.png'), type: 'image/png' %>
-  <%= stylesheet_link_tag 'application' %>
+  <%= stylesheet_link_tag :application %>
+  <%= javascript_include_tag :application %>
   <%= csrf_meta_tag %>
 </head>
 <%= body do %>
@@ -17,7 +18,6 @@
     <%= yield %>    
   </div>
   
-  <%= javascript_include_tag 'application' %>
   <%= render 'analytics' %>
 <% end %>
 </html>
