@@ -29,6 +29,7 @@
 
 <div>
   <div id="barcelona">
+    <div class="title">Barcelona</div>
     8/16 Fri
     arrived in barcelona
     Ida the swede let us in
@@ -55,6 +56,7 @@
     took a tour bus around
     olympics mont juic
     siesta
+    <%= render 'image_array', folder: 'barcelona' %>
   </div>
   <div id="altea">
     8/20 Mon
@@ -70,7 +72,7 @@
     Walked up the cliffs to a great light tower
     Went to town
     
-
+    <%= render 'image_array', folder: 'altea' %>
   </div>
   <div id="granada">
     8/22 Wed
@@ -82,6 +84,7 @@
     8/23 Thur
     Alhambra
     Madrid vs Barcelona + breadcrumbs
+    <%= render 'image_array', folder: 'barcelona' %>
   </div>
   <div id="nerja">
     8/25-8/26 
@@ -93,6 +96,7 @@
     8/27 Mon
     Cuevas!
     Relaxed
+    <%= render 'image_array', folder: 'nerja' %>
   </div>
   <div id="ronda">
     8/28 Tues
@@ -109,6 +113,7 @@
     nice tapas dinner (de locos tapas)
     walked along castle walls
     madrid vs barcelona
+    <%= render 'image_array', folder: 'ronda' %>
   </div>
   <div id="sevilla">
     
@@ -120,12 +125,16 @@
     8/31 Fri
     had a nice walk
     Sevilla Plaza de espana!
+    <%= render 'image_array', folder: 'sevilla' %>
+    
   </div>
   <div id="cordoba">
     Great mozquiterie!
     jewbag dinner
-    <%= spain_image 'barcelona/smiles' %>
-    
+    <%= render 'image_array', folder: 'cordoba' %>
+  </div>
+  <div id="madrid">
+    <%= render 'image_array', folder: 'madrid' %>
   </div>
 </div>
 
