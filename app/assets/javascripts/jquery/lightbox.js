@@ -334,6 +334,8 @@ lightbox = new Lightbox options
       } else if (key === 'n' || keycode === KEYCODE_RIGHTARROW) {
         if (this.currentImageIndex !== this.album.length - 1) {
           this.changeImage(this.currentImageIndex + 1);
+        } else {
+          this.end()
         }
       }
     };
