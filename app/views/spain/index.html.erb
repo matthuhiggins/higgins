@@ -1,31 +1,63 @@
 <% title 'Spain' %>
 
 <style>
-.title {
-  font-size: 30px;
-  font-weight: bold;
-  padding: 20px 0 10px 0;
+#spain.index .menu_wrap {
+  border-bottom: 1px solid #ccc;
+  overflow: hidden;
+  padding-bottom: 30px;
 }
 
+#spain.index .menu_wrap .map {
+  float: left;
+  margin-top: 10px;
+}
+
+#spain.index .menu_wrap .menu {
+  float: left;
+  width: 300px;
+/*  margin-left: 14px;*/
+}
+
+#spain.index .menu_wrap .title {
+  font-size: 30px;
+  padding-bottom: 14px;
+}
+
+#spain.index .menu_wrap li {
+  font-size: 19px;
+  padding: 2px 0;
+}
+
+#spain.index .visits .title {
+  font-size: 24px;
+/*  font-weight: bold;*/
+  padding: 30px 0 10px 0;
+}
+#spain.index .visits .image_array {
+  padding-top: 15px;
+}
 </style>
 
-<div id="menu">
-  <div id="map">
-    <%= image_tag 'spain/poop.png' %>
+<div class="menu_wrap">
+  <div class="menu">
+    <div class="title">Spain 2012</div>
+    <ul class="menu">
+      <li><%= link_to 'Barcelona', anchor: 'barcelona' %></li>
+      <li><%= link_to 'Altea', anchor: 'altea' %></li>
+      <li><%= link_to 'Granada', anchor: 'granada' %></li>
+      <li><%= link_to 'Nerja', anchor: 'nerja' %></li>
+      <li><%= link_to 'Ronda', anchor: 'ronda' %></li>
+      <li><%= link_to 'Sevilla', anchor: 'sevilla' %></li>
+      <li><%= link_to 'Cordoba', anchor: 'cordoba' %></li>
+      <li><%= link_to 'Madrid', anchor: 'madrid' %></li>
+    </ul>
   </div>
-  <ul>
-    <li><%= link_to 'Barcelona', anchor: 'barcelona' %></li>
-    <li><%= link_to 'Altea', anchor: 'altea' %></li>
-    <li><%= link_to 'Granada', anchor: 'granada' %></li>
-    <li><%= link_to 'Nerja', anchor: 'nerja' %></li>
-    <li><%= link_to 'Ronda', anchor: 'ronda' %></li>
-    <li><%= link_to 'Sevilla', anchor: 'sevilla' %></li>
-    <li><%= link_to 'Cordoba', anchor: 'cordoba' %></li>
-    <li><%= link_to 'Madrid', anchor: 'madrid' %></li>
-  </ul>
-</aside>
+  <div class="map">
+    <%= image_tag 'spain/map.png', height: 240, width: 320 %>
+  </div>
+</div>
 
-<div>
+<div class="visits">
   <div id="barcelona">
     <div class="title">Barcelona - Aug 16</div>
     arrived in barcelona
@@ -63,7 +95,7 @@
     arrived at altea
     found a great boardwalk
     
-    8/21 Tues
+    <div class="title">Altea - Aug 21</div>
     Worked on the tans, burned my leg
     Rented bikes and rode to Albir
     Walked up the cliffs to a great light tower
@@ -72,38 +104,37 @@
     <%= render 'image_array', folder: 'altea' %>
   </div>
   <div id="granada">
-    8/22 Wed
+    <div class="title">Granada - Aug 22</div>
     Drove to Granada
     Albacin area
     Mirador san nicolas
     Great dinner!!
     
-    8/23 Thur
+    <div class="title">Granada - Aug 23</div>
     Alhambra
     Madrid vs Barcelona + breadcrumbs
     <%= render 'image_array', folder: 'barcelona' %>
   </div>
   <div id="nerja">
-    8/25-8/26 
+    <div class="title">Nerja - Aug 25</div>
     Relaxed
     Train
     Balcon
     Pan sear
     
-    8/27 Mon
+    <div class="title">Nerja - Aug 27</div>
     Cuevas!
     Relaxed
     <%= render 'image_array', folder: 'nerja' %>
   </div>
   <div id="ronda">
-    8/28 Tues
-    -> Ronda
+    <div class="title">Ronda - Aug 28</div>
     puente nuevo (bridge)
     walked below it and above it and everywhere
     great music at the parks
     traga tapas
     
-    8/29 Wed
+    <div class="title">Ronda - Aug 29</div>
     Ronda ronda ronda
     got a nice painting
     Arab bathhouse
@@ -113,24 +144,24 @@
     <%= render 'image_array', folder: 'ronda' %>
   </div>
   <div id="sevilla">
-    
-    8/30 Thur
+    <div class="title">Sevilla - Aug 30</div>
     Arab bathhouse!
     Sevilla Catedral
     great dinner at vineria el telmo
     
-    8/31 Fri
+    <div class="title">Sevilla - Aug 31</div>
     had a nice walk
     Sevilla Plaza de espana!
     <%= render 'image_array', folder: 'sevilla' %>
-    
   </div>
   <div id="cordoba">
+    <div class="title">Cordoba - Sep 1</div>
     Great mozquiterie!
     jewbag dinner
     <%= render 'image_array', folder: 'cordoba' %>
   </div>
   <div id="madrid">
+    <div class="title">Madrid - Sep 2</div>
     <%= render 'image_array', folder: 'madrid' %>
   </div>
 </div>
