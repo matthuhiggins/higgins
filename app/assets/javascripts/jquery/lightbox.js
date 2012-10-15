@@ -48,10 +48,18 @@ lightbox = new Lightbox options
   LightboxOptions = (function() {
 
     function LightboxOptions() {
-      this.fileLoadingImage = 'images/loading.gif';
-      this.fileCloseImage = 'images/close.png';
-      this.resizeDuration = 700;
-      this.fadeDuration = 500;
+      // this.fileLoadingImage = 'images/loading.gif';
+      // CHANGE
+      this.fileLoadingImage = '/assets/lightbox/loading.gif';
+      // this.fileCloseImage = 'images/close.png';
+      // CHANGE
+      this.fileCloseImage = '/assets/lightbox/close.png';
+      // this.resizeDuration = 700;
+      // CHANGE
+      this.resizeDuration = 0;
+      // this.fadeDuration = 500;
+      // CHANGE
+      this.fadeDuration = 0;
       this.labelImage = "Image";
       this.labelOf = "of";
     }
@@ -253,7 +261,9 @@ lightbox = new Lightbox options
       var $lightbox;
       $lightbox = $('#lightbox');
       $lightbox.find('.lb-loader').hide();
-      $lightbox.find('.lb-image').fadeIn('slow');
+      // $lightbox.find('.lb-image').fadeIn('slow');
+      // CHANGE
+      $lightbox.find('.lb-image').show();
       this.updateNav();
       this.updateDetails();
       this.preloadNeighboringImages();

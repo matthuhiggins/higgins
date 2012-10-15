@@ -4,7 +4,9 @@ module ImagesHelper
   end
 
   def spain_image(folder, src)
-    lazy_image "spain/#{folder}/#{src}", height: '60'
+    link_to image_path("spain/#{folder}/#{src}"), rel: "lightbox[#{folder}]" do
+      lazy_image "spain/#{folder}/#{src}", height: '60'
+    end
   end
 
   def lazy_image(src, options = {})
