@@ -1,6 +1,6 @@
 module SpainHelper
   def spain_images(folder)
-    Dir[Rails.root.join('app/assets/images/spain').join("#{folder}/*.jpg").to_s].map { |src| File.basename(src) }
+    Dir[Rails.root.join('app/assets/images/spain').join("#{folder}/*.jpg").to_s].map { |src| File.basename(src) }.sort
   end
 
   def spain_image(folder, src)
