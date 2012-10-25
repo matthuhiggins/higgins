@@ -6,9 +6,7 @@
 }
 
 #spain.index .menu_wrap {
-  border-bottom: 1px solid #ccc;
   overflow: hidden;
-  padding-bottom: 30px;
 }
 
 #spain.index .menu_wrap .map {
@@ -32,11 +30,22 @@
 }
 
 #spain.index .visits h3 {
+  border-top: 1px solid #ccc;
+  margin-top: 25px;
+  
 /*  padding: 30px 0 10px 0;*/
 }
 
 #spain.index .visits .image_array {
-  padding-top: 15px;
+  margin-top: 15px;
+  overflow: hidden;
+}
+
+#spain.index .visits .image_array a {
+  float: left;
+  height: 60px;
+  padding: 2px;
+  width: 60px;
 }
 </style>
 
@@ -98,10 +107,15 @@
       After feeling bloated from our daily breakfasts of pastries and cafe
       con leche we decided to hit up an American-style restaurant/bar called
       Milk. Egg benedicts brought us the comfort of home. We then devoted
-      the rest of our day to tourism. First to La Sagrada Familia (also a
+      the rest of our day to tourism.
+    </p>
+    <p>
+      First to La Sagrada Familia (also a
       Gaudi design) which is a giant cathedral that commenced construction
       in 1882 and is set to finish in 2026 (the centennial of Gaudi's
       death). We hope to return to Spain again to see the finished product.
+    </p>
+    <p>
       Next came Casa Batllo, which was built by Gaudi for a textile
       industrialist in the early 20th century. We were pleased with the
       underwater theme and light wells. Then we decided to be uber tourists
@@ -184,16 +198,14 @@
     Relaxed
     <%= render 'image_array', folder: 'nerja/1' %>
 
-    <h3>Nerja - Aug 25</h3>
+    <h3>Nerja - Aug 25 - 27</h3>
     Train
     Balcon
     Pan sear
-    <%= render 'image_array', folder: 'nerja/2' %>
     
-    <h3>Nerja - Aug 27</h3>
     Cuevas!
     Relaxed
-    <%= render 'image_array', folder: 'nerja/3' %>
+    <%= render 'image_array', folder: 'nerja/2' %>
   </div>
   <div id="ronda">
     <h3>Ronda - Aug 28</h3>
@@ -213,12 +225,11 @@
     <%= render 'image_array', folder: 'ronda/2' %>
   </div>
   <div id="sevilla">
-    <h3>Sevilla - Aug 30</h3>
+    <h3>Sevilla - Aug 30 - 31</h3>
     Arab bathhouse!
     Sevilla Catedral
     great dinner at vineria el telmo
     
-    <h3>Sevilla - Aug 31</h3>
     had a nice walk
     Sevilla Plaza de espana!
     <%= render 'image_array', folder: 'sevilla' %>
