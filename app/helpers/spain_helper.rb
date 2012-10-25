@@ -5,7 +5,7 @@ module SpainHelper
 
   def spain_image(folder, src)
     link_to image_path("spain/#{folder}/#{src}"), rel: "lightbox[#{folder}]" do
-      image_tag "spain/thumbs/#{folder}/#{src}", height: 60, width: 60
+      image_tag "spain/thumbs/#{folder}/#{src}", height: 60
       # image_tag "spain/thumbnail/#{folder}/#{src}", height: '60'
     end
   end
