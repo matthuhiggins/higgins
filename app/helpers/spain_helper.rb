@@ -70,6 +70,28 @@ module SpainHelper
     '2012-08-21_02.25.18.jpg' => "Heading to La Mare de Déu del Consol",
     '2012-08-21_02.28.23.jpg' => "Brigitte found the way in",
     '2012-08-21_02.35.48.jpg' => "At the top of Altea",
+
+    '2012-08-30_07.00.12.jpg' => "Do you recognize this from high school art class?",
+    '2012-08-30_07.01.58.jpg' => "Relaxing in the mosque",
+    '2012-08-30_07.17.33.jpg' => "That's a nice organ you have there",
+    '2012-08-30_11.16.02.jpg' => "The tower of the mosque before dusk",
+    '2012-08-30_13.54.58.jpg' => "A relaxing night cap",
+    '2012-08-30_14.17.34.jpg' => "A giant man lives in this house",
+
+    '2012-08-31_05.23.13.jpg' => "Good luck navigating without a GPS",
+    '2012-08-31_07.12.17.jpg' => "Hostal Andorra, our final stop",
+    '2012-08-31_08.12.47.jpg' => "Outdoor library",
+    '2012-08-31_08.13.16.jpg' => "Partiers come here after a long night at the discoteca",
+    '2012-08-31_08.58.19.jpg' => "A long line for the free entry to Museo del Prado",
+    '2012-08-31_10.27.56.jpg' => "Some kind of soccer celebration",
+    '2012-08-31_11.27.56.jpg' => "Watching soccer at dinner",
+    '2012-08-31_12.27.56.jpg' => "At Cuevas de Sesamo, where only sangrias are served",
+    '2012-08-31_13.27.56.jpg' => "¡Discoteca!",
+    '2012-08-31_13.28.56.jpg' => "In el club!",
+    '2012-08-31_14.28.56.jpg' => "Chocolate and churros is magical",
+    '2012-08-31_23.01.44.jpg' => "No sleep, time to go home",
+    '2012-09-01_00.34.01.jpg' => "Peace out Espana!",
+    '2012-09-01_01.32.10.jpg' => "Brigitte inflates her airplane pillow",
   }
 
   def spain_images(folder)
