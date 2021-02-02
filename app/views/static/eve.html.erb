@@ -9,13 +9,13 @@
     font: 36px Tahoma;
     letter-spacing: 2px;
   }
-  
+
   h2 {
     font: 48px Tahoma;
     font-weight: bold;
     padding-top: 15px;
   }
-  
+
   h3 {
     font: 24px Tahoma;
     font-weight: bold;
@@ -31,7 +31,7 @@
     position: relative;
     width: 560px;
   }
-  
+
   #city #needle {
     height: 730px;
     left: 0;
@@ -40,7 +40,7 @@
     width: 560px;
     z-index: 2;
   }
-  
+
   #city #text {
     color: white;
     left: 0;
@@ -49,23 +49,21 @@
     text-align: center;
     top: 25px;
     width: 100%;
-    z-index: 3;        
+    z-index: 3;
   }
 </style>
-  
+
 <div id="city">
   <div id="needle">
   </div>
-  
+
   <div id="text">
   </div>
 </div>
 
-<%= javascript_include_tag 'yui/utilities' %>
-
 <script>
   function animateNeedle () {
-    YAHOO.util.Dom.setStyle('needle', 'background-image', 'url(/images/eve/spaceneedle.jpg)');        
+    YAHOO.util.Dom.setStyle('needle', 'background-image', 'url(/images/eve/spaceneedle.jpg)');
     var needleAnim = new YAHOO.util.Anim("needle", {top: {to: 0}}, 2.0);
 
     needleAnim.onComplete.subscribe(function () {
@@ -98,7 +96,7 @@
       textAnim.animate();
       animateNeedle();
     }
-    
+
     YAHOO.util.Dom.get('text').innerHTML =
         "<p>&nbsp;</p>" +
         "<p>&nbsp;</p>" +

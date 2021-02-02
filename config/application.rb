@@ -1,21 +1,19 @@
-require File.expand_path('../boot', __FILE__)
+require_relative "boot"
 
 require 'action_controller/railtie'
 require 'action_mailer/railtie'
-require 'rails/test_unit/railtie'
+# require 'active_model/railtie'
 require 'sprockets/railtie'
+# require 'rails/test_unit/railtie'
 
-Bundler.require(*Rails.groups(assets: %w(development test)))
+# require "rails/all"
+
+# Require the gems listed in Gemfile, including any gems
+# you've limited to :test, :development, or :production.
+Bundler.require(*Rails.groups)
 
 module Higgins
   class Application < Rails::Application
-    config.assets.enabled = true
-    config.active_support.deprecation = :stderr
-    config.secret_token = 'c08895573baf2c545629d3394bd1ed97'
-
-    config.facebook = {
-      app_id: '140646375985277',
-      secret: '16abc1c5a4a7846a571f121b5d6c977d'
-    }
+    config.load_defaults 6.1
   end
 end

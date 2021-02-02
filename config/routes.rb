@@ -1,5 +1,4 @@
-Higgins::Application.routes.draw do
-  match 'static/:action' => 'static'
-  match ':controller(/:action(/:id(.:format)))'
+Rails.application.routes.draw do
+  get 'static/:action' => 'static'
   root to: 'static#index'
 end

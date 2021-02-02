@@ -14,7 +14,7 @@ module SpainHelper
     '2012-08-16_11.07.57.jpg' => "It's an old church",
     '2012-08-16_12.07.57.jpg' => "Cappuccinos after dinner at Pla",
     '2012-08-16_19.13.41.jpg' => "Playing the guitar in Spain doesn't make it a Spainish guitar",
-    
+
     '2012-08-17_04.16.41.jpg' => "They called her the white wonder",
     '2012-08-17_04.36.17.jpg' => "A busy day on the Barcelona beach",
     '2012-08-17_06.29.39.jpg' => "Local lobster art",
@@ -35,7 +35,7 @@ module SpainHelper
     '2012-08-17_13.40.50.jpg' => "Looking up some skirts",
     '2012-08-17_13.43.31.jpg' => "And we're back in America",
     '2012-08-17_16.48.29.jpg' => "Capping off the night with a Spainish coffee",
-    
+
     '2012-08-18_04.31.57.jpg' => "They began constructing La Sagrada Familia in 1882. It's still not done.",
     '2012-08-18_04.55.10.jpg' => "Behold La Sagrada Familia",
     '2012-08-18_06.00.41.jpg' => "Casa Batllo, a house designed by Gaudi, uses this light well to get light to all floors",
@@ -45,7 +45,7 @@ module SpainHelper
     '2012-08-18_07.28.01.jpg' => "This is where the 1992 Barcelona Olympics were held",
     '2012-08-18_07.44.37.jpg' => "Matt was obsessed with the communication tower",
     '2012-08-18_07.52.39.jpg' => "Matt becomes one with the communication tower",
-    
+
     '2012-08-19_05.21.26.jpg' => "Our terribly underpowered rental car",
     '2012-08-19_06.07.10.jpg' => "Brigitte can't behave herself",
     '2012-08-19_07.37.46.jpg' => "City of Arts and Sciences",
@@ -206,10 +206,8 @@ module SpainHelper
   end
 
   def spain_image(folder, src)
-    Rails.logger.info "#{folder}/#{src}"
     link_to image_path("spain/#{folder}/#{src}"), rel: "lightbox[#{folder}]", title: SPAIN_CAPTIONS[src] do
       image_tag "spain/thumbs/#{folder}/#{src}", height: 60
-      # image_tag "spain/thumbnail/#{folder}/#{src}", height: '60'
     end
   end
 end
@@ -217,7 +215,7 @@ end
 # root_path = Rails.root.join('app/assets/images/spain').to_s
 # Dir["#{root_path}/**/*.jpg"].map do |orig|
 #   next if orig =~ /thumbs/
-#   
+#
 #   thumb_path = orig.gsub(root_path, "#{root_path}/thumbs")
 #   FileUtils.mkdir_p(File.dirname(thumb_path))
 #   # `convert --scale 25% #{orig} #{thumb_path}`
