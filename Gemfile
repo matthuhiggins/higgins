@@ -1,4 +1,4 @@
-ruby "3.0.0"
+ruby "3.0.2"
 
 source 'http://rubygems.org' do
   gem 'bootsnap', require: false
